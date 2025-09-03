@@ -1,0 +1,61 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: fit-content;
+}
+
+.full-body {
+    background-color: rgb(233, 238, 233);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background-color: rgb(215, 243, 215);
+    width: 100%;
+    height: 5.6rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+}
+
+.header-button {
+    font-size: 1.5rem;
+    color: rgb(37, 37, 37);
+    text-decoration: none;
+}
+
+.header-button:hover {
+    color: rgb(95, 148, 48);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar-nav-scroll {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navbar-nav-scroll .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(95, 148, 48);
+    background-color: rgb(215, 243, 215);
+}
+
+a {
+    color: rgb(95, 148, 48);
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
