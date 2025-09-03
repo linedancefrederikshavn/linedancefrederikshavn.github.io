@@ -50,6 +50,46 @@ html, body {
     background-color: rgb(215, 243, 215);
 }
 
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    min-height: 195px;
+    max-height: 195px;
+    left: 0;
+    right: 0;
+    background: rgb(215, 243, 215);
+    z-index: 1000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+    padding-top: 6px;
+    overflow-y: hidden;
+  }
+
+  .navbar-nav {
+    flex-direction: column !important;
+    min-height: 195px;
+    max-height: 195px;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+    padding: 0;
+  }
+}
+
 a {
     color: rgb(95, 148, 48);
 }
