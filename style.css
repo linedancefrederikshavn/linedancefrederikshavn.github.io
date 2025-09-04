@@ -50,14 +50,14 @@ html, body {
     background-color: rgb(215, 243, 215);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar-collapse {
     position: absolute;
     top: 100%;
     width: 200px;
     min-height: 195px;
     max-height: 195px;
-    left: 0;
+    left: auto;
     right: 0;
     background: rgb(215, 243, 215);
     z-index: 1000;
