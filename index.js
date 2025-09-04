@@ -53,7 +53,12 @@ window.addEventListener("load", async () => {
     .resolve();
 });
 window.onerror = function (errorMsg, url, lineNumber, column, errorObj) {
-  alert('Error: ' + errorMsg + ' Script: ' + url + ' Line: ' + lineNumber
-    + ' Column: ' + column + ' StackTrace: ' + errorObj);
+  alert("Error: " + errorMsg + " Script: " + url + " Line: " + lineNumber
+    + " Column: " + column + " StackTrace: " + errorObj);
 }
 
+// close collapse menu when a link is clicked
+document.querySelectorAll(".nav-link").forEach(e => e.addEventListener("click", () => {
+  const bsCollapse = new bootstrap.Collapse(document.getElementById("topnav"), { toggle: false });
+  bsCollapse.hide();
+}));
